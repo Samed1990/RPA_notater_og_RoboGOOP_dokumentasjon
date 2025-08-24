@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block title %}Hjem - RPA Dokumentasjonsportal{% endblock %}
+
+{% block content %}
+<div class="hero-section">
+    <div class="container py-5">
+        <div class="row align-items-center min-vh-75">
+            <div class="col-lg-6">
+                <div class="hero-content">
+                    <h1 class="display-4 fw-bold text-primary mb-4">
+                        Velkommen til RPA-portalen
+                    </h1>
+                    <p class="lead mb-4">
+                        Din komplette guide til robotiserte prosesser og automatisering. 
+                        Finn teknisk dokumentasjon, prosessveiledninger og feilsøkingshjelp.
+                    </p>
+                    
+                   
+                    
+                    <!-- Start Process Section -->
+                    <div class="start-process-section p-4 bg-light rounded-3 border">
+                        <h5 class="text-primary mb-3">
+                            <i class="bi bi-play-circle"></i> Start robotflyt
+                        </h5>
+                        <p class="text-muted mb-3">
+                            Klikk her dersom du er en superbruker for å starte en automatisert prosess eller få tilgang til robotkontrollpanelet.
+                              
+                        </p>
+                        <button class="btn btn-success btn-lg" onclick="window.open('https://flask-robot-trigger.onrender.com/', '_blank')">
+                            <i class="bi bi-robot"></i> Start prosess
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="hero-image text-center">
+                    <div class="feature-cards">
+                        <a href="{{ url_for('dev_docs') }}" class="card shadow-sm mb-3 feature-card-link text-decoration-none">
+                            <div class="card-body feature-card-pa-desktop">
+                                <i class="bi bi-desktop text-white fs-1 mb-3"></i>
+                                <h5 class="text-white">PA Desktop</h5>
+                                <p class="text-white-75">Utviklerverktøy og teknisk dokumentasjon</p>
+                            </div>
+                        </a>
+                        <a href="{{ url_for('process_docs') }}" class="card shadow-sm mb-3 feature-card-link text-decoration-none">
+                            <div class="card-body feature-card-processes">
+                                <i class="bi bi-list-check text-white fs-1 mb-3"></i>
+                                <h5 class="text-white">Prosessveiledninger</h5>
+                                <p class="text-white-75">Steg-for-steg guide for saksbehandlere</p>
+                            </div>
+                        </a>
+                        <a href="{{ url_for('process_docs') }}" class="card shadow-sm feature-card-link text-decoration-none">
+                            <div class="card-body feature-card-troubleshooting">
+                                <i class="bi bi-tools text-white fs-1 mb-3"></i>
+                                <h5 class="text-white">Feilsøking</h5>
+                                <p class="text-white-75">Løsninger på vanlige problemer</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quick Access Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Hurtiglenker</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="bi bi-question-circle text-primary fs-1 mb-3"></i>
+                        <h5 class="card-title">Trenger hjelp?</h5>
+                        <p class="card-text">Finn svar på vanlige spørsmål og feilsøkingshjelp.</p>
+                        <a href="{{ url_for('process_docs') }}" class="btn btn-outline-primary">Se prosesser</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="bi bi-book text-success fs-1 mb-3"></i>
+                        <h5 class="card-title">Teknisk dokumentasjon</h5>
+                        <p class="card-text">Detaljert informasjon for utviklere og superbrukere.</p>
+                        <a href="{{ url_for('dev_docs') }}" class="btn btn-outline-success">Les mer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="bi bi-graph-up text-info fs-1 mb-3"></i>
+                        <h5 class="card-title">Prosessstatistikk</h5>
+                        <p class="card-text">Se ytelse og statistikk for automatiserte prosesser.</p>
+                        <button class="btn btn-outline-info" onclick="alert('Kommer snart!')">Vis statistikk</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+function startProcess() {
+    // Placeholder for process start functionality
+    alert('Robotflyt starter...\n\nDette ville normalt åpnet robotkontrollpanelet eller startet en spesifikk automatisert prosess.');
+    
+    // In a real implementation, this could:
+    // - Open a modal with process selection
+    // - Redirect to robot control panel
+    // - Make API call to start specific process
+    // - Launch Power Automate Desktop flow
+}
+</script>
+{% endblock %}

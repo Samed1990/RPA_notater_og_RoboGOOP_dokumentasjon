@@ -1,0 +1,4 @@
+Flask==2.3.3
+PyYAML==6.0.1
+Markdown==3.5.1
+Pygments==2.16.1
