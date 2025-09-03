@@ -3,3 +3,4 @@ PyYAML==6.0.1
 Markdown==3.5.1
 Pygments==2.16.1
 gunicorn
+rank-bm25==0.2.2
