@@ -51,7 +51,7 @@ Denne prosessen beskriver hvordan RoboGOOP utfører historikksjekk og hvilke for
 *Eksempel på ufullstendig robotnotat i eSam*
 
 ### ASTA-søk feilet
-- Av og til ser man en tomt notat fra ASTA, det betyr at robot ikke har klart å gjennomføre søk. 
+- Av og til ser man et tomt notat fra ASTA, det betyr at robot ikke har klart å gjennomføre søk. 
 - Årsak: Cache-minne i nettleser der ASTA kjører, og ASTA har git bare en hvit skjerm.   
 - Tiltak (oppdatert 14.05.25): Robot tømmer cache hver gang ASTA åpnes og på denne måten klarer å søke på nytt etter at den har sikret at ASTA er responsiv. 
 Hvis ikke ASTA gir noen respons etter flere forsøk, skal robot avslutte prosessen og ikke generere feilaktige resultater. 
