@@ -139,8 +139,8 @@ Log message %DebugInfo%
 ```power-automate
 # Ved kritiske feil
 Send email
-    From: "rpa@organization.no"
-    To: "admin@organization.no"
+    From: "placeholder"
+    To: "placeholder"
     Subject: "RPA Feil: %FlowName%"
     Body: "
     Flow: %FlowName%
