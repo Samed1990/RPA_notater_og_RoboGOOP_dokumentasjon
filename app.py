@@ -15,7 +15,7 @@ CATEGORIES = ["dev", "processes"]
 
 # BM25-innstillinger
 MAX_CANDIDATES = 30   # hent så mange kandidater fra BM25
-TOP_K = 3             # hvor mange utdrag vi viser tilbake
+TOP_K = 5             # hvor mange utdrag vi viser tilbake
 MIN_BM25 = 2        # terskel: under dette sier vi at vi ikke fant noe relevant
 
 app = Flask(__name__)
